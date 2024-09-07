@@ -8,13 +8,14 @@
 body {
     background: #75cdb5;
     overflow: hidden;
-    height: 100%;
+    height: 100vh;
+    width: 100vw;
 }
 
 .card {
     width: 90%;
     max-width: 470px;
-    min-width: 370px;
+    min-width: 350px;
     background: linear-gradient(135deg, #00feba, #5b548a);
     color: #fff;
     margin: 100px auto 0;
@@ -58,6 +59,10 @@ body {
     width: 16px;
 }
 
+.weather {
+    display: none;
+}
+
 
 .weather-icon {
     width: 170px;
@@ -99,9 +104,20 @@ body {
     margin-top: -6px;
 }
 
+.invalid {
+    margin-top: 30px;
+    display: none;
+}
+
 @media screen and (max-width:430px){
+    body {
+        background: linear-gradient(135deg, #00feba, #5b548a);
+        background-repeat: no-repeat;
+
+    }
     .card {
         padding: 30px 25px;
+        background: transparent;
     }
 
     .search input {
